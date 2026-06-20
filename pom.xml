@@ -14,7 +14,6 @@
     <artifactId>jaz-s32706-nbp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>jaz-s32706-nbp</name>
-    <description>Spring API do obliczania średniego kursu walut z API NBP</description>
 
     <properties>
         <java.version>21</java.version>
