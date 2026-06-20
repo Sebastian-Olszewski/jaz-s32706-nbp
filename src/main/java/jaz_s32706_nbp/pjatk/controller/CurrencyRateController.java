@@ -46,7 +46,7 @@ public class CurrencyRateController {
             @ApiResponse(responseCode = "502", description = "API NBP jest niedostępne albo zwróciło błąd serwerowy", content = @Content(schema = @Schema(implementation = ApiErrorResponse.class)))
     })
     public ResponseEntity<AverageRateResponse> getAverageRate(
-            @Parameter(description = "Trzyliterowy kod waluty ISO 4217", example = "USD", required = true)
+            @Parameter(description = "Trzyliterowy kod waluty (ISO 4217)", example = "USD", required = true)
             @RequestParam
             @Pattern(regexp = "^[A-Za-z]{3}$", message = "Waluta musi mieć trzyliterowy kod, np. USD")
             String currency,

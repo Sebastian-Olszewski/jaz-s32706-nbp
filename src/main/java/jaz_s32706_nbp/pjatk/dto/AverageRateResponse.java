@@ -11,7 +11,7 @@ public record AverageRateResponse(
         @Schema(description = "Id zapisanego zapytania w bazie danych", example = "1")
         Long id,
 
-        @Schema(description = "Kod waluty ISO 4217", example = "USD")
+        @Schema(description = "Kod waluty (ISO 4217)", example = "USD")
         String currency,
 
         @Schema(description = "Data rozpoczęcia przedziału", example = "2024-01-01")
